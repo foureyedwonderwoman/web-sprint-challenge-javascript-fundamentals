@@ -244,7 +244,7 @@ constructor(data){
 
 //🦄🦄🦄 Test your volume and surfaceArea methods by uncommenting the logs below: 🦄🦄🦄
 // console.log(cuboidTwo.volume()); // 100
-// console.log(cuboidTwo.surfaceArea()); // 130
+// console.log(cuboidTwo.surfaceArea()); // 130oh
 
 
 

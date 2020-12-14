@@ -29,14 +29,20 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  let totes = 0
-  let summer =[]
-  summer.push(number)
-  for (let i = 0;i < summer.length; i++){
-    totes+= summer[i]
+  let sumNum = number
+   let increment = function(step){
+     sumNum += step
+   }
+   return  increment
+  //  let summer =[]
+  //  summer.push(number)
+  //  for (let i = 0;i < summer.length; i++){
+  //  totes+= summer[i]
   }
-  console.log(summer)
-  }
+ 
+ 
+ 
+  
   // const myArray = [2, 3, 4, 5, 35];
   // const myOtherArray = myArray._______(function(item) {
       // return item * 2
@@ -69,10 +75,9 @@ const zooAnimals = [
    ary.forEach(sciDisplay)
 
   function sciDisplay (animal_name,scientific_name){
-   
-  }
     return`name ${animal_name}, scientific 
-  ${scientific_name} `
+${scientific_name} `
+  }
   }
   
   
@@ -238,7 +243,13 @@ constructor(data){
   this.height = data.height,
   this.length = data.length
 }
-
+volume(){
+  return this.length*this.width*this.height
+}
+surfaceArea(){
+  return 2 *((this.length *this.width) + (this.length * this.
+    height) + (this.width * this.height)) 
+}
 }
 
 

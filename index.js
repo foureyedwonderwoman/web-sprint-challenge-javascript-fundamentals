@@ -29,17 +29,24 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  let sumNum = number
-   let increment = function(step){
-     sumNum += step
-   }
-   return  increment
-  //  let summer =[]
-  //  summer.push(number)
-  //  for (let i = 0;i < summer.length; i++){
-  //  totes+= summer[i]
-  }
- 
+  // let sumNum = number
+  //  let increment = function(step){
+    //  sumNum += step
+  //  }
+  //  return increment
+  let totes= 0
+  function counter(i){
+    for (let i = 0;i <= number; i++){
+      totes =+ number;
+    }
+  }   
+    counter(i)
+    return totes
+}
+
+
+
+
  
  
   
@@ -71,15 +78,15 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(ary){
-   ary.forEach(sciDisplay)
+  function animalNames(arry){
+   let displayNames=[]
+   zooAnimals.forEach (element =>displayNames.push(`name: ${element.animal_name}, scientific: ${element.scientific_name}`
+   ))
+    
+   return displayNames
 
-  function sciDisplay (animal_name,scientific_name){
-    return`name ${animal_name}, scientific 
-${scientific_name} `
   }
-  }
-  
+   
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -89,10 +96,12 @@ ${scientific_name} `
   */
 
   function lowerCaseNames(arry){
-    let lowList = arry.map(function(l){
-      return l.toLowerCase();
-    })
+   
+    var lowList = arry.map(
+      low => low.animal_name.toLowerCase()
+    )
     return lowList
+   
   }
   
   

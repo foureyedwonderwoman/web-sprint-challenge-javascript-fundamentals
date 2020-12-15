@@ -127,11 +127,10 @@ const zooAnimals = [
   */
 
   function USApop(arry){
-    
-    let reducer =(accumulator, item) => {
-      return accumulator + item
-    }
-    let totes = arry.reduce(reducer,start)
+    let totePop = arry.reduce(function(accumulator, pop){
+      return accumulator + pop.population
+    }, 0)  
+    return totePop
   }
   
   

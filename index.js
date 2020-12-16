@@ -35,15 +35,16 @@ function summation(number) {
   //  }
   //  return increment
   let totes= 0
-  function counter(i){
+  let summer =[]
     for (let i = 0;i <= number; i++){
-      totes =+ number;
+      summer.push(i) 
     }
-  }   
-    counter(i)
-    return totes
+    var sum = summer.reduce(function(a, b){
+      return a + b;
+  }, 0);
+return sum      
 }
-
+summation(4)
 
 
 

@@ -144,10 +144,10 @@ const zooAnimals = [
   */
 
    function consume(a,b,cb){
-  //  function(){}
-  //  function cb(callback){callback}
-   }
- 
+   return cb(a,b);
+   
+  }
+      
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
